@@ -19,6 +19,7 @@
 ## 주소
 
 - 배포: https://ds-project-sdgs.vercel.app (Vercel 프로젝트 `ds-project-sdgs`)
+- 코드: https://github.com/onezerozerocom/ds-project-sdgs (비공개) – `main`에 푸시하면 Vercel이 자동으로 배포해요.
 - 내 컴퓨터: `public/index.html`을 열거나 `python -m http.server 5540 --directory public` (이때 AI 코치만 꺼짐)
 
 ## AI 코치 (Gemini)
