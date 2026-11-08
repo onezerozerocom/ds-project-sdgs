@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>데이터 과학 프로젝트 노트</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <p class="eyebrow">Ⅳ. 데이터 과학 프로젝트 · 교과서 168~181쪽</p>
+      <h1 id="projTitle">데이터 과학 프로젝트 노트</h1>
+      <p class="sub">지속 가능 발전 목표(SDGs)에서 주제를 골라, 문제 정의부터 일반화·공유까지 한 단계씩 기록해요.</p>
+    </div>
+    <div class="top-actions">
+      <span class="save-state" id="saveState" role="status">자동 저장됨</span>
+      <button type="button" class="btn ghost" id="btnExport" title="작업 내용을 파일로 저장 (다른 컴퓨터에서 이어 하기)">파일로 저장</button>
+      <label class="btn ghost" title="저장해 둔 .json 파일 불러오기">불러오기<input type="file" id="fileImport" accept=".json,application/json" hidden /></label>
+      <button type="button" class="btn ghost" id="btnReset">새로 시작</button>
+    </div>
+  </header>
+
+  <nav class="stepper" id="stepper" aria-label="프로젝트 단계"></nav>
+
+  <main id="main"></main>
+
+  <footer class="foot" id="foot"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="data/sdgs.js"></script>
+  <script src="data/regions.js"></script>
+  <script src="data/indicators.js"></script>
+  <script src="data/samples.js"></script>
+  <script src="config.js"></script>
+  <script src="stats.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
